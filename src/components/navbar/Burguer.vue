@@ -4,7 +4,7 @@
       <img id="menu" :src="source" alt="menu" width="50" height="50" />
     </a>
     <div id="show">
-      <div @click="fecharMenu" class="close"><img src="../assets/navbar/close.svg" alt="close" width="30" height="30"></div>
+      <div @click="fecharMenu" class="close"><img src="../../assets/navbar/close.svg" alt="close"></div>
       <ul>
         <a @click="fecharMenu" v-scroll-to="link1"><li>
           {{texto1}}
@@ -64,6 +64,7 @@ export default {
 <style scoped>
 #menu{
   cursor: pointer;
+  margin-right: 10px;
 }
 .close {
   position: absolute;
@@ -72,6 +73,8 @@ export default {
   top: 0;
   right: 0;
   cursor: pointer;
+  width: 30px ;
+  height: 30px;
 }
 #show {
 display: flex;
@@ -122,5 +125,16 @@ transition: all .2s linear ;
     font-size: 20px;
     font-weight: bold;
     color: #000;
+}
+@media screen and (max-width: 375px) {
+  #menu{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  .close{
+    width: 20px !important;
+    height: 20px !important;
+  }
 }
 </style>

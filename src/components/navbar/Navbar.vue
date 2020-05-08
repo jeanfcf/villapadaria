@@ -1,10 +1,10 @@
 <template>
-  <div id="navbar">
-    <a href="#"><img v-scroll="handleScroll" id="logo" src="../assets/navbar/logo_branca.svg" alt="logo" ></a>
+  <div v-on:mouseover="print" id="navbar">
+    <a href="#"><img v-scroll="handleScroll" id="logo" src="../../assets/navbar/logo_branca.svg" alt="logo" ></a>
     <c-burguer 
     class="show"
     :source="burguer" 
-    link1="#home" 
+    link1="#inicio" 
     link2="#home" 
     link3="#home" 
     link4="#home" 
@@ -19,10 +19,10 @@
     />
     <ul>
       <li>
-        <a @click="print" :class="{black: aplicar}" v-scroll-to="{el: '#home',offset: this.height}">INÍCIO</a>
+        <a  :class="{black: aplicar}" v-scroll-to="{el: '#inicio',offset: this.height}">INÍCIO</a>
       </li>
       <li>
-        <a :class="{black: aplicar}" v-scroll-to="'#home'">SOBRE</a>
+        <a :class="{black: aplicar}" v-scroll-to="{el: '#home',offset: this.height}">SOBRE</a>
       </li>
       <li>
         <a :class="{black: aplicar}" v-scroll-to="'#home'">DELIVERY</a>
@@ -50,11 +50,24 @@ export default {
    return {
      height: 0,
      aplicar: false,
-     burguer: require('../assets/navbar/menu_branca.svg')
+     burguer: require('@/assets/navbar/menu_branca.svg')
    }
  },
    methods:{
-     print(){console.log(this.height)},
+     print(){
+       let alt = window.innerWidth;
+       console.log(alt)
+       if(alt < 375){
+         this.height = -60;
+       }else if(alt < 760){
+         this.height = -85;
+       }else if(alt < 1350){
+         this.height = -110;
+       }else{
+         this.height = -135;
+       }
+       console.log(this.height)
+       },
     handleScroll: function (evt, el) {
       if (window.scrollY > 0) {
         el.setAttribute(
@@ -66,8 +79,7 @@ export default {
         document.getElementById('logo').style.marginTop = 0;
         }
         this.aplicar = true;
-        this.burguer = require('../assets/navbar/menu_azul.svg')
-        this.height = -document.getElementById('navbar').offsetHeight
+        this.burguer = require('@/assets/navbar/menu_azul.svg')
       }else{
         el.setAttribute(
           'src',
@@ -76,8 +88,7 @@ export default {
         document.getElementById('navbar').style.backgroundColor = '#1a8acb';
         document.getElementById('logo').style.marginTop = '15%';
         this.aplicar =false;
-        this.burguer = require('../assets/navbar/menu_branca.svg')
-        this.height = -document.getElementById('navbar').offsetHeight
+        this.burguer = require('@/assets/navbar/menu_branca.svg')
       }
     }
   }

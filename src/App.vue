@@ -1,13 +1,13 @@
 <template>
   <div id="app">
       <c-navbar/>
-      <div class="teste"></div>
+      <div id="inicio"></div>
       <div id="home"></div>
   </div>
 </template>
 
 <script>
-import cNavbar from './components/Navbar.vue';
+import cNavbar from './components/navbar/Navbar.vue';
 export default {
   name: 'App',
   components: {
@@ -25,7 +25,7 @@ export default {
     font-family: 'Montserrat'
   }  
 
-  .teste{
+  #teste{
     height: 200vh;
     background-color: #1A8ACB;
     width: 100%;
