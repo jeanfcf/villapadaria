@@ -11,8 +11,8 @@ import cHome from './components/Home.vue';
 export default {
   name: 'App',
   components: {
-    cNavbar,
-    cHome
+    cHome,
+    cNavbar
   }, 
   }
 

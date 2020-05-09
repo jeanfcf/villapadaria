@@ -23,9 +23,8 @@ import cSlide from './Slide';
 </script>
 
 <style scoped>
+
     #home{
-        display: flex;
-        align-items: center;
         height: 100vh;
         background-color: #1a8acb;
     }
