@@ -1,14 +1,26 @@
 <template>
-  <div id="slide">
-    <swiper :options="swiperOption" id="swiper">
+  <div id="slidesobre">
+    <swiper :options="swiperOption">
       <swiper-slide>
-        <div id="slide1" class="slide" :style="{ backgroundImage: 'url(' + img[0] + ')' }"></div>
+        <div id="slidesobre1" class="slide">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
+            <img class="villa-slide-logo" src="../assets/sobre/villa_gourmet.svg" alt="gourmet" />
+            <div class="villa-slide-img"></div>
+        </div>
       </swiper-slide>
       <swiper-slide>
-        <div id="slide2" class="slide" :style="{ backgroundImage: 'url(' + img[0] + ')' }"></div>
+        <div id="slidesobre2" class="slide">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
+            <img class="villa-slide-logo" src="../assets/sobre/villa_padaria.svg" alt="gourmet" />
+            <div class="villa-slide-img"></div>
+        </div>
       </swiper-slide>
       <swiper-slide>
-        <div id="slide3" class="slide" :style="{ backgroundImage: 'url(' + img[0] + ')' }"></div>
+        <div id="slidesobre3" class="slide">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
+            <img class="villa-slide-logo" src="../assets/sobre/villa_bistro.svg" alt="gourmet" />
+            <div class="villa-slide-img"></div>
+        </div>
       </swiper-slide>
       <div class="swiper-button-prev" slot="button-prev"></div>
       <div class="swiper-button-next" slot="button-next"></div>
@@ -20,7 +32,6 @@
 export default {
   data() {
     return {
-      img: [require("../assets/home/slide/croissant.svg")],
       swiperOption: {
         autoplay: true,
         slidesPerView: 1,
@@ -36,21 +47,88 @@ export default {
 </script>
 
 <style scoped>
-#slide {
+#slidesobre1 {
+  background-color: #dcdfde;
+}
+#slidesobre2 {
+  background-color: #1a8acb;
+}
+#slidesobre3 {
+  background-color: #fca500;
+}
+#slidesobre{
   display: flex;
   height: 100%;
   align-items: center;
 }
+
+#slidesobre p {
+    font-size: 24px;
+  color: #5f6364;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
 .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 100vh;
   width: 100vw;
+  padding: 5%;
 }
 
-@media screen and (max-width: 600px) {
-  .slide {
-    height: 250px;
+.villa-slide-img {
+  width: 90%;
+  height: 250px;
+  border-radius: 76px;
+  background-color: #c4c4c4;
+}
+
+@media screen and (max-width: 700px){
+
+  .villa-slide-logo{
+    width: 355.5px;
+    height: 170px;
   }
+
+  .villa-slide-img{
+    height: 200px;
+  }
+  
+}
+
+@media screen and (max-width: 500px){
+
+  #slidesobre p {
+    font-size: 20px;
+
+}
+
+  .villa-slide-logo{
+       width: 251px;
+    height: 120px;
+  }
+
+  .villa-slide-img{
+    height: 150px;
+  }
+  
+}
+@media screen and (max-width: 374px){
+
+  #slidesobre p {
+    font-size: 14px;
+
+}
+.villa-slide-logo{
+       width: 198.75px;
+    height: 95px;
+  }
+
+  
 }
 </style>

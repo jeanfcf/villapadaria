@@ -1,16 +1,16 @@
 <template>
   <div id="burguer">
-    <a @click="abrirMenu">
+    <a @click="abrirMenu(); print()">
       <img id="menu" :src="source" alt="menu" width="50" height="50" />
     </a>
     <div id="show">
       <div @click="fecharMenu" class="close"><img src="../../assets/navbar/close.svg" alt="close"></div>
       <ul>
-        <a @click="fecharMenu" v-scroll-to="link1"><li>
+        <a @click="fecharMenu" v-scroll-to="{el: link1, offset: this.height}"><li>
           {{texto1}}
         </li>
         </a>
-        <a @click="fecharMenu" v-scroll-to="link2"><li>
+        <a @click="fecharMenu" v-scroll-to="{el: link2, offset: this.height}"><li>
           {{texto2}}
         </li>
         </a>
@@ -33,6 +33,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      height: 0,
+    }
+  },
   props: {
     link1: String,
     link2: String,
@@ -49,6 +54,18 @@ export default {
     source: String
   },
   methods: {
+    print(){
+       let alt = window.innerWidth;
+       if(alt < 375){
+         this.height = -60;
+       }else if(alt < 760){
+         this.height = -85;
+       }else if(alt < 1350){
+         this.height = -110;
+       }else{
+         this.height = -135;
+       }
+       },
     abrirMenu() {
       document.getElementById("menu").style.display = "none";
       document.getElementById("show").style.transform = 'translateX(100vw)'

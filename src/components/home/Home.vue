@@ -1,9 +1,9 @@
 <template>
     <div id="home">
-        <img class="vetor" src="../assets/home/vetor_azul_cima.svg" alt="desenho" id="vetor1">
+        <img class="vetor" src="../../assets/home/vetor_azul_cima.svg" alt="desenho" id="vetor1">
         <c-slide/>
-        <img class="vetor" src="../assets/home/vetor_azul_baixo_direita.svg" alt="desenho" id="vetor2">
-        <img class="vetor" src="../assets/home/vetor_azul_baixo_esquerda.svg" alt="desenho" id="vetor3">
+        <img class="vetor" src="../../assets/home/vetor_azul_baixo_direita.svg" alt="desenho" id="vetor2">
+        <img class="vetor" src="../../assets/home/vetor_azul_baixo_esquerda.svg" alt="desenho" id="vetor3">
 
     </div>
 </template>

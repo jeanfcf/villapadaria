@@ -4,8 +4,8 @@
     <c-burguer 
     class="show"
     :source="burguer" 
-    link1="#inicio" 
-    link2="#home" 
+    link1="#home" 
+    link2="#sobre" 
     link3="#home" 
     link4="#home" 
     link5="#home" 
@@ -19,10 +19,10 @@
     />
     <ul>
       <li>
-        <a  :class="{black: aplicar}" v-scroll-to="{el: '#inicio',offset: this.height}">INÍCIO</a>
+        <a  :class="{black: aplicar}" v-scroll-to="{el: '#home',offset: this.height}">INÍCIO</a>
       </li>
       <li>
-        <a :class="{black: aplicar}" v-scroll-to="{el: '#home',offset: this.height}">SOBRE</a>
+        <a :class="{black: aplicar}" v-scroll-to="{el: '#sobre',offset: this.height}">SOBRE</a>
       </li>
       <li>
         <a :class="{black: aplicar}" v-scroll-to="'#home'">DELIVERY</a>
@@ -126,6 +126,7 @@ export default {
 #navbar ul li a{
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 #navbar ul li a:hover{
     color: #5f6364;
