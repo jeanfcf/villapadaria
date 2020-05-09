@@ -1,17 +1,18 @@
 <template>
   <div id="app">
       <c-navbar/>
-      <div id="inicio"></div>
-      <div id="home"></div>
+      <c-home/>
   </div>
 </template>
 
 <script>
 import cNavbar from './components/navbar/Navbar.vue';
+import cHome from './components/Home.vue';
 export default {
   name: 'App',
   components: {
-    cNavbar
+    cNavbar,
+    cHome
   }, 
   }
 
@@ -22,18 +23,6 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat'
+    font-family: 'Montserrat';
   }  
-
-  #teste{
-    height: 200vh;
-    background-color: #1A8ACB;
-    width: 100%;
-  }
-
-  #home{
-    height: 200vh;
-    background-color: blueviolet;
-    width: 100%;
-  }
 </style>

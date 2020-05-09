@@ -13,6 +13,7 @@ Vue.use(VueScrollTo, {
   x: false,
   y: true
 })
+
 Vue.directive('scroll', {
   inserted: function (el, binding) {
     let f = function (evt) {

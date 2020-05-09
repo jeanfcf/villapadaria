@@ -56,7 +56,6 @@ export default {
    methods:{
      print(){
        let alt = window.innerWidth;
-       console.log(alt)
        if(alt < 375){
          this.height = -60;
        }else if(alt < 760){
@@ -66,7 +65,6 @@ export default {
        }else{
          this.height = -135;
        }
-       console.log(this.height)
        },
     handleScroll: function (evt, el) {
       if (window.scrollY > 0) {
@@ -85,7 +83,7 @@ export default {
           'src',
           require('@/assets/navbar/logo_branca.svg')
         )
-        document.getElementById('navbar').style.backgroundColor = '#1a8acb';
+        document.getElementById('navbar').style.backgroundColor = 'transparent';
         document.getElementById('logo').style.marginTop = '15%';
         this.aplicar =false;
         this.burguer = require('@/assets/navbar/menu_branca.svg')
@@ -108,6 +106,7 @@ export default {
     padding-left: 5%;
     padding-right: 3%;
     transition: all 0.2s ease-in 0.1s;
+    z-index: 100;
 }
 
 #logo{
