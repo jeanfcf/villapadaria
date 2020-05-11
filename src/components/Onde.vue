@@ -18,10 +18,10 @@
       <div class="onde-foto" />
     </div>
     <div class="vetores">
-      <img class="vetor" id="onde-vetor1" src="../assets/onde/canto_cima_esquerdo.svg" alt="vetor" />
-      <img class="vetor" id="onde-vetor2" src="../assets/onde/canto_cima_direito.svg" alt="vetor" />
-      <img class="vetor" id="onde-vetor3" src="../assets/onde/canto_baixo_esquerdo.svg" alt="vetor" />
-      <img class="vetor" id="onde-vetor4" src="../assets/onde/canto_baixo_direito.svg" alt="vetor" />
+      <img class="vetor" id="onde-vetor1" src="../assets/onde/canto_cima_esquerdo.png" alt="vetor" />
+      <img class="vetor" id="onde-vetor2" src="../assets/onde/canto_cima_direito.png" alt="vetor" />
+      <img class="vetor" id="onde-vetor3" src="../assets/onde/canto_baixo_esquerdo.png" alt="vetor" />
+      <img class="vetor" id="onde-vetor4" src="../assets/onde/canto_baixo_direito.png" alt="vetor" />
     </div>
   </div>
 </template>

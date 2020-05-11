@@ -4,21 +4,21 @@
       <swiper-slide>
         <div id="slidesobre1" class="slide">
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
-            <img class="villa-slide-logo" src="../../assets/sobre/villa_gourmet.svg" alt="gourmet" />
+            <img class="villa-slide-logo" src="../../assets/sobre/villa_gourmet.png" alt="gourmet" />
             <div class="villa-slide-img"></div>
         </div>
       </swiper-slide>
       <swiper-slide>
         <div id="slidesobre2" class="slide">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
-            <img class="villa-slide-logo" src="../../assets/sobre/villa_padaria.svg" alt="gourmet" />
+            <img class="villa-slide-logo" src="../../assets/sobre/villa_padaria.png" alt="gourmet" />
             <div class="villa-slide-img"></div>
         </div>
       </swiper-slide>
       <swiper-slide>
         <div id="slidesobre3" class="slide">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
-            <img class="villa-slide-logo" src="../../assets/sobre/villa_bistro.svg" alt="gourmet" />
+            <img class="villa-slide-logo" src="../../assets/sobre/villa_bistro.png" alt="gourmet" />
             <div class="villa-slide-img"></div>
         </div>
       </swiper-slide>

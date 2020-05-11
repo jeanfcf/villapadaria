@@ -20,7 +20,7 @@
 export default {
   data() {
     return {
-      img: [require("../../assets/home/slide/croissant.svg")],
+      img: [require("../../assets/home/slide/croisant.jpg")],
       swiperOption: {
         autoplay: true,
         slidesPerView: 1,

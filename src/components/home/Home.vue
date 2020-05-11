@@ -1,9 +1,9 @@
 <template>
     <div id="home">
-        <img class="vetor" src="../../assets/home/vetor_azul_cima.svg" alt="desenho" id="vetor1">
+        <img class="vetor" src="../../assets/home/vetor_azul_cima.png" alt="desenho" id="vetor1">
         <c-slide/>
-        <img class="vetor" src="../../assets/home/vetor_azul_baixo_direita.svg" alt="desenho" id="vetor2">
-        <img class="vetor" src="../../assets/home/vetor_azul_baixo_esquerda.svg" alt="desenho" id="vetor3">
+        <img class="vetor" src="../../assets/home/vetor_azul_baixo_direita.png" alt="desenho" id="vetor2">
+        <img class="vetor" src="../../assets/home/vetor_azul_baixo_esquerda.png" alt="desenho" id="vetor3">
 
     </div>
 </template>
@@ -45,10 +45,18 @@ import cSlide from './Slide';
         left: 0;
         bottom:0;
     }
-    @media screen and (max-width: 972px) {
+    @media screen and (max-width: 1400px) {
         #vetor1{
             width: 366px;
             height: 285px;
+        }
+        #vetor2{
+            width: 267px;
+            height: 290px;
+        }
+        #vetor3{
+            width: 285px;
+            height: 225px;
         }
     }
     @media screen and (max-width: 760px) {

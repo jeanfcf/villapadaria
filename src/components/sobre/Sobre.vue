@@ -4,17 +4,17 @@
      <div id="sobre2">
     <div id="gourmet" class="villa">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
-      <img class="villa-logo" src="../../assets/sobre/villa_gourmet.svg" alt="gourmet" />
+      <img class="villa-logo" src="../../assets/sobre/villa_gourmet.png" alt="gourmet" />
       <div class="villa-img"></div>
     </div>
     <div id="padaria" class="villa">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
-      <img class="villa-logo" src="../../assets/sobre/villa_padaria.svg" alt="padaria" />
+      <img class="villa-logo" src="../../assets/sobre/villa_padaria.png" alt="padaria" />
       <div class="villa-img"></div>
     </div>
     <div id="bistro" class="villa">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
-      <img class="villa-logo" src="../../assets/sobre/villa_bistro.svg" alt="bistro" />
+      <img class="villa-logo" src="../../assets/sobre/villa_bistro.png" alt="bistro" />
       <div class="villa-img"></div>
     </div>
     </div> 
