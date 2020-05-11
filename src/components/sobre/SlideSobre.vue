@@ -4,21 +4,21 @@
       <swiper-slide>
         <div id="slidesobre1" class="slide">
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
-            <img class="villa-slide-logo" src="../assets/sobre/villa_gourmet.svg" alt="gourmet" />
+            <img class="villa-slide-logo" src="../../assets/sobre/villa_gourmet.svg" alt="gourmet" />
             <div class="villa-slide-img"></div>
         </div>
       </swiper-slide>
       <swiper-slide>
         <div id="slidesobre2" class="slide">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
-            <img class="villa-slide-logo" src="../assets/sobre/villa_padaria.svg" alt="gourmet" />
+            <img class="villa-slide-logo" src="../../assets/sobre/villa_padaria.svg" alt="gourmet" />
             <div class="villa-slide-img"></div>
         </div>
       </swiper-slide>
       <swiper-slide>
         <div id="slidesobre3" class="slide">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
-            <img class="villa-slide-logo" src="../assets/sobre/villa_bistro.svg" alt="gourmet" />
+            <img class="villa-slide-logo" src="../../assets/sobre/villa_bistro.svg" alt="gourmet" />
             <div class="villa-slide-img"></div>
         </div>
       </swiper-slide>
@@ -76,7 +76,7 @@ export default {
   justify-content: space-around;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   padding: 5%;
 }
@@ -128,7 +128,16 @@ export default {
        width: 198.75px;
     height: 95px;
   }
+}
 
+@media screen and (max-height: 420px){
+   #slidesobre p {
+    margin-bottom: 5%;
+
+}
+.villa-slide-logo{
+margin-bottom: 5%;
   
+}
 }
 </style>

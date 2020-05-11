@@ -4,17 +4,17 @@
      <div id="sobre2">
     <div id="gourmet" class="villa">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
-      <img class="villa-logo" src="../assets/sobre/villa_gourmet.svg" alt="gourmet" />
+      <img class="villa-logo" src="../../assets/sobre/villa_gourmet.svg" alt="gourmet" />
       <div class="villa-img"></div>
     </div>
     <div id="padaria" class="villa">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
-      <img class="villa-logo" src="../assets/sobre/villa_padaria.svg" alt="padaria" />
+      <img class="villa-logo" src="../../assets/sobre/villa_padaria.svg" alt="padaria" />
       <div class="villa-img"></div>
     </div>
     <div id="bistro" class="villa">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel quas, aperiam harum aliquam cupiditate saepe aspernatur commodi ad possimus placeat tenetur quidem maxime inventore. Unde, nesciunt. Unde, eligendi earum!</p>
-      <img class="villa-logo" src="../assets/sobre/villa_bistro.svg" alt="bistro" />
+      <img class="villa-logo" src="../../assets/sobre/villa_bistro.svg" alt="bistro" />
       <div class="villa-img"></div>
     </div>
     </div> 
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import cSlide from './Slide';
+import cSlide from './SlideSobre';
   export default {
       components:{
           cSlide
@@ -38,7 +38,7 @@ import cSlide from './Slide';
 <style scoped>
 #sobre{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 #slidesobre{
     display: none;
@@ -47,7 +47,7 @@ import cSlide from './Slide';
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
 }
 #sobre2 p {
     font-size: 18px;
@@ -70,7 +70,7 @@ import cSlide from './Slide';
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
 .villa-img {
   width: 90%;

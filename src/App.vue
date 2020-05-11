@@ -3,19 +3,22 @@
       <c-navbar/>
       <c-home/>
       <c-sobre/>
+      <c-onde/>
   </div>
 </template>
 
 <script>
 import cNavbar from './components/navbar/Navbar.vue';
 import cHome from './components/home/Home.vue';
-import cSobre from './components/Sobre.vue';
+import cSobre from './components/sobre/Sobre.vue';
+import cOnde from './components/Onde.vue';
 export default {
   name: 'App',
   components: {
     cHome,
     cNavbar,
-    cSobre
+    cSobre,
+    cOnde
   }, 
   }
 

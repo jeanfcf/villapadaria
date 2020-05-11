@@ -22,7 +22,11 @@
           {{texto4}}
         </li>
         </a>
-        <a @click="fecharMenu" v-scroll-to="link5"><li>
+        <a @click="fecharMenu" v-scroll-to="{el: link5, offset: this.height}"><li>
+          {{texto5}}
+        </li>
+        </a>
+        <a @click="fecharMenu" v-scroll-to="{el: link5, offset: this.height}"><li>
           {{texto5}}
         </li>
         </a>

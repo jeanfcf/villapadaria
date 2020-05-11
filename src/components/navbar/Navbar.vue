@@ -8,7 +8,7 @@
     link2="#sobre" 
     link3="#home" 
     link4="#home" 
-    link5="#home" 
+    link5="#onde" 
     link6="#home" 
     texto1="HOME" 
     texto2="SOBRE" 
@@ -31,7 +31,7 @@
         <a :class="{black: aplicar}" v-scroll-to="'#home'">PORTFÓLIO</a>
       </li>
       <li>
-        <a :class="{black: aplicar}" v-scroll-to="'#home'">ONDE ESTAMOS?</a>
+        <a :class="{black: aplicar}" v-scroll-to="{el: '#onde',offset: this.height}">ONDE ESTAMOS?</a>
       </li>
       <li>
         <a :class="{black: aplicar}" v-scroll-to="'#home'">CONTATO</a>
@@ -61,7 +61,7 @@ export default {
        }else if(alt < 760){
          this.height = -85;
        }else if(alt < 1350){
-         this.height = -110;
+         this.height = -109;
        }else{
          this.height = -135;
        }
